@@ -15,6 +15,9 @@ public class Main {
 
         String[] sentenceOneArray = sentenceOne.split(" ");
 
+            // First I made an array of each word... by spliting the sentence (string).
+            //Next I will create a for loop which calls the makePigLatin method and prints the new sentence.
+            
         for (int i = 0; i < sentenceOneArray.length; i++) {
 
             System.out.print(" ");
@@ -51,7 +54,8 @@ public class Main {
                     System.out.println(firstWord);
                 } */
 
-
+// I tried to create a loop that checks for each symbol. However I could not place the loop in an if statement. 
+//I got stuck.
 
         }
     }
