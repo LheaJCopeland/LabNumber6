@@ -33,7 +33,9 @@ public class Main {
     }
 
     public static void makePigLatin(String firstWord) {
-        //In this method, I am trying to find the first letter of each word then check to see if it's a vowel. If so I'll add way. Otherwise I'll move before the first vowel and add ay to the end.
+        //In this method, I am trying to find the first letter of each word then check to see if it's a vowel. If so I'll add way. 
+        //Otherwise I'll move before the first vowel and add ay to the end.
+        //First I check to see if the first character of the word is a number...
         
         String[] firstWordArray = firstWord.split("");
         String pigLatinWord;
