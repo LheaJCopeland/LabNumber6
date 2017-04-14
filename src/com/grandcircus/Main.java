@@ -34,13 +34,19 @@ public class Main {
 
     public static void makePigLatin(String firstWord) {
         //In this method, I am trying to find the first letter of each word then check to see if it's a vowel. If so I'll add way. Otherwise I'll move before the first vowel and add ay to the end.
-
+        
         String[] firstWordArray = firstWord.split("");
         String pigLatinWord;
 
-        if ((firstWord.charAt(0) == '1') || (firstWord.charAt(0) == '2' || (firstWord.charAt(0) == '3') || (firstWord.charAt(0) == '4') || (firstWord.charAt(0) == '5') || (firstWord.charAt(0) == '6') || (firstWord.charAt(0) == '7') || (firstWord.charAt(0) == '8') || (firstWord.charAt(0) == '9') || (firstWord.charAt(0) == '0'))) {
+        if ((firstWord.charAt(0) == '1') || (firstWord.charAt(0) == '2' || 
+           (firstWord.charAt(0) == '3') || (firstWord.charAt(0) == '4') || 
+           (firstWord.charAt(0) == '5') || (firstWord.charAt(0) == '6') || 
+           (firstWord.charAt(0) == '7') || (firstWord.charAt(0) == '8') || 
+           (firstWord.charAt(0) == '9') || (firstWord.charAt(0) == '0'))) {
             System.out.print(firstWord);
-        } else if ((firstWord.charAt(0) == 'a') || (firstWord.charAt(0) == 'e') || (firstWord.charAt(0) == 'i') || (firstWord.charAt(0) == 'o') || (firstWord.charAt(0) == 'u') || (firstWord.charAt(0) == 'y')) {
+        } else if ((firstWord.charAt(0) == 'a') || (firstWord.charAt(0) == 'e') || 
+                   (firstWord.charAt(0) == 'i') || (firstWord.charAt(0) == 'o') || 
+                   (firstWord.charAt(0) == 'u') || (firstWord.charAt(0) == 'y')) {
             System.out.print(firstWord + "way");
         } else {
             for (int x = 0; x < (firstWordArray.length - 1); x++) {
